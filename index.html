@@ -1,14 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Frankline Kipruto - Frontend Web Developer </title>
-    <link rel="icon" type="image/x-icon" href="./Images/prakash.jpg">
+    <title> My Portfolio </title>
+    <link rel="icon" type="image/x-icon" href="./Images/profile.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init("service_wheoj0i");
+   })();
+</script>
+
 </head>
 <body>
 
@@ -56,8 +64,8 @@
             <div class="home-content">
                 <h6 class="poppinss">Hi, I'm</h6>
                 <h1 class="t-white"> Frankline Kipruto Korir</h1>
-                <h4 class="poppinss">Frontend Web Developer</h4>
-                <a href="#" target="_blank"><button
+                <h4 class="poppinss">Data Science Enthusiast</h4>
+                <a href="./CV/cv.pdf" download="_blank"><button
                         class="btn poppins">Resume</button></a>
                 <a class=""
                     target="_blank">Let's Talk</a>
@@ -66,7 +74,7 @@
         <div class="home-right flex s-center items-center">
             <div class="circle flex s-center items-center" id="mainImage">
                 <!-- Here in src replace the given link with your image link -->
-                <img src="./Images/franko.jpg" alt="">
+                <img src="./Images/profile.jpg" alt="" style="height:80%; width: 85%; background-color: rgba(0, 0, 0, 0.103);">
             </div>
 
         </div>
@@ -80,17 +88,15 @@
                 <!-- Here in src replade the given link with your secondary image link -->
                 <img src="./Images/Snapfrank.jpg" alt="" style="width: 50%;">
             </div>
-
             <div class="about-right flex">
                 <div class="about-content">
                     <h1 class="t-white m-b-1 poppins">Frankline Kipruto Korir</h1>
-                    <p class="t-white poppins">A self-tought Frontend Web Developer <b>B.IT</b> student looking for
-                        an opportunity in Web Development. <br>
-                        Who is committed to study web development. Mindset to fullfill the life with
-                        wonderful memories and knowledge.</p>
-                    <a class="btn live poppins" id="hireme"
-                        href="">Hire Me</a>
+                    <p class="t-white poppins">A self-taught Data Enthusiast and Frontend Web Developer. <b>B.CS</b> student transitioning into Data Science and seeking opportunities to make an impact. <br>
+                    Committed to leveraging web development skills and passion for data to derive meaningful insights and solutions. Driven by a mindset to explore, learn, and create wonderful memories and knowledge.</p>
+                    <a class="btn live poppins" id="hireme" href="">Hire Me</a>
                 </div>
+            </div>
+            
             </div>
         </div>
     </section>
@@ -98,23 +104,28 @@
     <!-- Skills Section -->
     <section id="skills">
         <h1 class="t-center my-2 t-white f-2">Skills</h1>
-        <div class="services-container flex s-around h-50"">
+        <div class="services-container flex s-around h-50">
         <div class=" skills-left flex s-center items-center">
-            <img src="/Images/skills.png" alt="">
+            <img src="./Images/skills.png" alt="">
         </div>
 
         <div class="skills-right flex items-center">
             <div class="skillss-container">
                 <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
                         class="bar-content right-skills t-white">90%</span></div>
+                <div class="mongodb bar p-relative"><span class="bar-content left t-white">MongoDB</span><span
+                        class="bar-content right-skills t-white">85%</span></div>         
                 <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
                         class="bar-content right-skills t-white">80%</span></div>
                 <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
                         class="bar-content right-skills t-white">75%</span></div>
-                <div class="bootstrap bar p-relative"><span class="bar-content left t-white">Python</span><span
+                <div class="flask bar p-relative"><span class="bar-content left t-white">Flask</span><span
+                        class="bar-content right-skills t-white">70%</span></div>          
+                <div class="python bar p-relative"><span class="bar-content left t-white">Python</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="reactjs bar p-relative"><span class="bar-content left t-white">React JS</span><span
                         class="bar-content right-skills t-white">50%</span></div>
-                <div class="reactjs bar p-relative"><span class="bar-content left t-white">Bootstrap</span><span
-                        class="bar-content right-skills t-white">30%</span></div>
+                     
             </div>
         </div>
         </div>
@@ -122,28 +133,23 @@
 
     <!-- Services Section -->
     <section id="services">
-        <h1 class=" t-center my-2 t-white f-2">Services</h1>
+        <h1 class="t-center my-2 t-white f-2">Services</h1>
         <div class="services-container flex s-center">
             <div class="test-item flex f-col items-center">
-                <img src="./Images//developer.png" alt="">
-                <h1 class="t-white poppins">Web Development</h1>
-                <p class="t-white poppins">Web Development is envolving everywhere. Every startup and every bussines
-                    have their own websites. As my passion I will help you to build your clean and fast website for your
-                    startup or your bussines.</p>
+                <img src="./Images//data-analysis.png" alt="">
+                <h1 class="t-white poppins">Data Analysis</h1>
+                <p class="t-white poppins">Data Analysis is the backbone of informed decision-making. Whether you're a startup or an established business, I will help you uncover insights from your data, identify trends, and make data-driven decisions to propel your success.</p>
             </div>
             <div class="test-item flex f-col items-center">
-                <img src="./Images//social-media-management.png" alt="">
-                <h1 class="t-white poppins">Social Media Management</h1>
-                <p class="t-white poppins">Social Media is the power of future. So I'll help in developing brand
-                    awareness thow managing your social media handles and will to increase customer loyalty.</p>
+                <img src="./Images//machine-learning.png" alt="">
+                <h1 class="t-white poppins">Machine Learning</h1>
+                <p class="t-white poppins">Machine Learning is transforming industries by automating processes and predicting outcomes. I'll assist in developing and deploying machine learning models tailored to your business needs, enhancing your capabilities and efficiency.</p>
             </div>
             <div class="test-item flex f-col items-center">
-                <img src="./Images//startup.png" alt="">
-                <h1 class="t-white poppins">Growth Strategies</h1>
-                <p class="t-white poppins">As a web developer also I will help your brand to grow up . I will provide
-                    the growth strategies for your brand. And also help in searching techniques for your brand.</p>
+                <img src="./Images//data-visualization.png" alt="">
+                <h1 class="t-white poppins">Data Visualization</h1>
+                <p class="t-white poppins">Effective Data Visualization turns complex data into understandable and actionable insights. I will create clear and engaging visualizations that help you communicate your data stories and make impactful presentations.</p>
             </div>
-
         </div>
     </section>
 
@@ -187,65 +193,87 @@
     </section>
 
     <!-- Contact Me Section -->
-    <section id="contact" class="m-b-1">
-        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
-        <div class="contact-container flex s-around items-centers">
-            <div class="form" id="contactForm">
-                <form action="" id="contactFrom">
-                    <div class="name form-div">
-                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
-                    </div>
-                    <div class="email form-div">
-                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
-                            required>
-                    </div>
-                    <div class="phone form-div">
-                        <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone"
-                            required>
-                    </div>
-                    <div class="textarea form-div">
-                        <textarea name="text" id="textarea" cols="30" rows="10" class="poppins"
-                            placeholder="Enter Messages"></textarea>
-                    </div>
-                    <button type="submit" class="btn poppins" id="submit">Send</button>
-                </form>
-            </div>
+<section id="contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div class="contact-container flex s-around items-centers">
+        <div class="form">
+            <form id="contactForm">
+                <div class="name form-div">
+                    <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                </div>
+                <div class="email form-div">
+                    <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email" required>
+                </div>
+                <div class="phone form-div">
+                    <input type="tel" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone" required>
+                </div>
+                <div class="textarea form-div">
+                    <textarea name="message" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
+                </div>
+                <button type="submit" class="btn poppins">Send</button>
+            </form>
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer id="footer">
-        <ul class="flex s-center w-80 m-auto my-2 res">
-            <li><a href="#home" class="poppinss">Home</a></li>
-            <li><a href="#about" class="poppinss">About</a></li>
-            <li><a href="#skills" class="poppinss">Skills</a></li>
-            <li><a href="#projects" class="poppinss">Projects</a></li>
-            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
-        </ul>
-        <ul class="flex s-center w-80 font-awesome ">
-            <a href="" target="_blank">
-                <li><i class="fa-brands fa-linkedin-in"></i></li>
-            </a>
-            <a href="#home" target="_blank">
-                <li><i class="fa-brands fa-github"></i></li>
-            </a>
-            <a href="#home" target="_blank">
-                <li><i class="fa-brands fa-instagram"></i></li>
-            </a>
-            <a href="#home" target="_blank">
-                <li><i class="fa-brands fa-youtube"></i></li>
-            </a>
-        </ul>
-        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Frankline
-            Kipruto</span></p>
-
-    </footer>
-
-    <div id="scroll-top" onclick="scrolltop()">
-        <span><i class="fa-solid fa-arrow-up"></i></span>
     </div>
+</section>
 
-</body>
+<!-- Footer Section -->
+<footer id="footer">
+    <ul class="flex s-center w-80 m-auto my-2 res">
+        <li><a href="#home" class="poppinss">Home</a></li>
+        <li><a href="#about" class="poppinss">About</a></li>
+        <li><a href="#skills" class="poppinss">Skills</a></li>
+        <li><a href="#projects" class="poppinss">Projects</a></li>
+        <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+    </ul>
+    <ul class="flex s-center w-80 font-awesome">
+        <a href="https://linkedin.com/in/frankline-kipruto-2516141b0" target="_blank">
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </a>
+        <a href="https://github.com/KiprutoKE" target="_blank">
+            <li><i class="fa-brands fa-github"></i></li>
+        </a>
+        <a href="https://instagram.com/_frankline._/" target="_blank">
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </a>
+        <a href="#home" target="_blank">
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </a>
+    </ul>
+    <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Frankline Kipruto</span></p>
+</footer>
+
+<div id="scroll-top" onclick="scrolltop()">
+    <span><i class="fa-solid fa-arrow-up"></i></span>
+</div>
+
 <script src="/script.js"></script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-</html>
+        // Collect input values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('textarea').value;
+
+        // Prepare the email parameters
+        var templateParams = {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        };
+
+        // Send the email
+        emailjs.send('service_wheoj0i', 'template_3hshu22', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Message sent successfully!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Message sending failed.');
+            });
+    });
+</script>
+=======
