@@ -193,29 +193,36 @@
     </section>
 
     <!-- Contact Me Section -->
-<section id="contact" class="m-b-1">
-    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
-    <div class="contact-container flex s-around items-centers">
-        <div class="form">
-            <form id="contactForm">
-                <div class="name form-div">
-                    <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
-                </div>
-                <div class="email form-div">
-                    <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email" required>
-                </div>
-                <div class="phone form-div">
-                    <input type="tel" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone" required>
-                </div>
-                <div class="textarea form-div">
-                    <textarea name="message" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
-                </div>
-                <button type="submit" class="btn poppins">Send</button>
-            </form>
+    <section id="contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form">
+                <form id="contactForm" name="contact" netlify netlify-honeypot="bot-field" action="/success.html" method="POST">
+                    <!-- Hidden input for form name -->
+                    <input type="hidden" name="form-name" value="contact" />
+                    
+                    <!-- Honeypot field to catch bots -->
+                    <div style="display: none;">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </div>
+                    
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="phone form-div">
+                        <input type="tel" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone" required>
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="message" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins">Send</button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 <!-- Footer Section -->
 <footer id="footer">
     <ul class="flex s-center w-80 m-auto my-2 res">
