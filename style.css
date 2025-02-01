@@ -359,6 +359,61 @@ textarea {
     resize: none;
 }
 
+#contact {
+    padding: 2rem 0;
+}
+
+.contact-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-container .form {
+    width: 50%;
+}
+
+.contact-container .form-div {
+    margin-bottom: 1rem;
+}
+
+.contact-container .form-div input,
+.contact-container .form-div textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #4db5ff;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-container .form-div input::placeholder,
+.contact-container .form-div textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-container .form-div textarea {
+    resize: none;
+}
+
+.contact-container .form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #4db5ff;
+    color: #1f1f38;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-container .form button:hover {
+    background-color: #1f1f38;
+    color: #4db5ff;
+    border: 1px solid #4db5ff;
+}
 
 
 /* Footer Section  */
