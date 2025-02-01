@@ -254,33 +254,3 @@
 </div>
 
 <script src="/script.js"></script>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // Collect input values
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var phone = document.getElementById('phone').value;
-        var message = document.getElementById('textarea').value;
-
-        // Prepare the email parameters
-        var templateParams = {
-            name: name,
-            email: email,
-            phone: phone,
-            message: message
-        };
-
-        // Send the email
-        emailjs.send('service_wheoj0i', 'template_3hshu22', templateParams)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                alert('Message sent successfully!');
-            }, function(error) {
-                console.log('FAILED...', error);
-                alert('Message sending failed.');
-            });
-    });
-</script>
-=======
