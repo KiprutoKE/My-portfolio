@@ -192,37 +192,31 @@
         </div>
     </section>
 
-    <!-- Contact Me Section -->
     <section id="contact" class="m-b-1">
-        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
-        <div class="contact-container flex f-col s-center items-center">
-            <div class="form">
-                <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-                    <!-- Hidden input for form name -->
-                    <input type="hidden" name="form-name" value="contact" />
-                    
-                    <!-- Honeypot field to catch bots -->
-                    <div style="display: none;">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                    </div>
-                    
-                    <div class="name form-div">
-                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
-                    </div>
-                    <div class="email form-div">
-                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email" required>
-                    </div>
-                    <div class="phone form-div">
-                        <input type="tel" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone" required>
-                    </div>
-                    <div class="textarea form-div">
-                        <textarea name="message" id="textarea" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
-                    </div>
-                    <button type="submit" class="btn poppins">Send</button>
-                </form>
-            </div>
+    <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+    <div class="contact-container flex s-around items-centers">
+        <div class="form" id="contactForm">
+            <form action="/success" method="POST" data-netlify="true" id="contactForm">
+                <div class="name form-div">
+                    <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                </div>
+                <div class="email form-div">
+                    <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
+                        required>
+                </div>
+                <div class="phone form-div">
+                    <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone"
+                        required>
+                </div>
+                <div class="textarea form-div">
+                    <textarea name="message" id="textarea" cols="30" rows="10" class="poppins"
+                        placeholder="Enter Messages"></textarea>
+                </div>
+                <button type="submit" class="btn poppins" id="submit">Send</button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
 <!-- Footer Section -->
 <footer id="footer">
